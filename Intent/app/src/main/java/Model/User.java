@@ -44,7 +44,10 @@ public class User implements Parcelable {
         dest.writeInt(this.age);
     }
 
-    public User() {
+    public User(String username, String name, int age) {
+        this.username = username;
+        this.name = name;
+        this.age = age;
     }
 
     protected User(Parcel in) {
